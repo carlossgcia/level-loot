@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+
+    /* Tipografia */
+    /*
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    */
+}
+
+
+:root {
+
+    --azul-oscuro: #008DC7;
+    --azul: #1FC7FF;
+    --verde-oscuro: #A3E629;
+    --verde: #B5FF2E;
+    --verde-claro: #DAFF96;
+}
+
+
+
+/*Cabecera*/
+.cabecera {
+    background-color: var(--azul-oscuro);
+}
+
+.falso {
+
+    width: 100%;
+}
+
+.menu {
+
+    margin: 0 auto;
+
+    max-width: 1100px;
+    padding: 10px;
+
+}
+
+.active {
+    color: var(--verde-claro);
+}
+
+.nav-link {
+    font-weight: bolder;
+    color: white;
+}
+
+.nav-link:hover {
+    color: var(--verde);
+}
+
+.navbar-toggler {
+    background-color: var(--verde);
+    color: var(--verde-claro);
+}
+
+ul .boton-acceso {
+    background-color: var(--verde-oscuro);
+    color: black;
+}
+
+ul .boton-acceso:focus {
+    background-color: var(--verde) !important;
+    color: black !important;
+}
+
+ul .boton-acceso:hover {
+    background-color: var(--verde);
+    color: black;
+}
+
+
+div .img {
+    width: 100%;
+}
+
+.imagen-logo {
+    width: 30%;
+}
+
+
+
+.lista {
+    color: white;
+    text-decoration: none;
+}
+
+/* fin cabecera */
+/*titulo**/
+#titulo {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+
+    position: relative;
+    top: 14em;
+    background-color: #ffffff69;
+    z-index: 1000;
+}
+
+/*carrousel */
+.carousel {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+
+    width: 100%;
+
+
+}
+
+.carousel-item .img {
+    object-fit: center;
+
+
+}
+
+/*Fin Carousel*/
+/*Estructura principal */
+.estructura {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+
+
+
+
+.imagen-portada {
+    width: 100%;
+}
+
+.btn-cat,
+.lista {
+    width: 100%;
+}
+
+
+.fila1,
+.fila2,
+.fila3 {
+    min-height: 300px;
+    /* Cambiado a min-height para permitir que el contenido se expanda */
+}
+
+
+.item1,
+.item3,
+.item5,
+.item7 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.item1,
+.item3,
+.item7 {
+    min-height: 300px;
+    /* Mismo tamaño para mantener la altura de la imagen */
+}
+
+.item2,
+.item4 {
+    min-height: 150px;
+    /* Reducido el tamaño de las imágenes secundarias */
+}
+
+.item h2 {
+    backdrop-filter: blur(5px);
+}
+
+.item1 {
+    background-image: url('../img/ofertas/sala_gaming1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.item2 {
+    background-image: url('../img/ofertas/mortal_kombat_11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.item3 {
+    background-image: url('../img/ofertas/maquinas-recreativas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.item4 {
+    background-image: url('../img/ofertas/minecraft.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+.item6 {
+    background-image: url('../img/ofertas/gta_v.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.item7 {
+    background-image: url('../img/ofertas/sala_gaming2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+/*Boton de contactar*/
+.estructura .btn-contactar {
+    width: 100%;
+}
+
+.contactar {
+    color: white;
+    text-decoration: none;
+    width: 50%;
+}
+
+/*Fin boton contactar*/
+
+
+
+/*contacto */
+
+.formulario-contacto {
+    max-width: 1100px;
+}
+
+.footer {
+    max-width: 1100px;
+}
+
+
+
+/* ==========================================CATALOGO========================================*/
+
+.cards {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/*================================FOOTER=======================================================*/
+
+/* Estilos para el footer */
+footer {
+
+
+    background-color: var(--azul-oscuro);
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--verde-claro);
+}
+
+
+/* Cambiando estilos para enlaces rápidos */
+footer ul li a {
+    color: var(--verde-claro);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: var(--verde-oscuro);
+}
+
+.copy {
+    border-top: 2px solid var(--verde);
+    background-color: var(--azul-oscuro);
+}
+
+
+/*===========================Formularios=======================================*/
+
+.forms {
+
+    min-height: 40vh;
+
+    display: flex;
+
+
+}
